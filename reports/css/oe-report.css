@@ -515,9 +515,14 @@ a:hover {
   transform: translate3d(var(--glow-x2), var(--glow-y2), 0);
 }
 
-.hero > *:not(.hero-glows) {
+.hero > .hero-center {
   position: relative;
   z-index: 1;
+}
+
+.hero-meta,
+.hero-brands {
+  z-index: 2;
 }
 
 .hero::after {
@@ -2169,8 +2174,8 @@ body.lightbox-open {
     min-height: min(92vh, 40rem);
     gap: 1.25rem;
     padding-top: calc(clamp(3.25rem, 12vw, 5rem) + 5.25rem);
-    padding-bottom: clamp(2rem, 8vw, 2.75rem);
-    justify-content: flex-start;
+    padding-bottom: clamp(4.5rem, 14vw, 5.5rem);
+    justify-content: center;
   }
 
   .hero-center {
@@ -2191,32 +2196,32 @@ body.lightbox-open {
   }
 
   .hero-meta {
-    position: static;
-    left: auto;
+    position: absolute;
+    left: var(--oe-pad);
     right: auto;
-    bottom: auto;
-    max-width: none;
-    margin: 1.5rem 0 0;
-    text-align: center;
-    font-size: 0.78rem;
+    bottom: clamp(1.15rem, 4vw, 1.65rem);
+    max-width: min(11rem, 42vw);
+    margin: 0;
+    text-align: left;
+    font-size: 0.72rem;
   }
 
   .hero-brands {
-    position: static;
+    position: absolute;
     left: auto;
-    right: auto;
-    bottom: auto;
-    margin: 0.85rem 0 0;
-    justify-content: center;
-    gap: 0.75rem;
+    right: var(--oe-pad);
+    bottom: clamp(1.15rem, 4vw, 1.65rem);
+    margin: 0;
+    justify-content: flex-end;
+    gap: 0.65rem;
   }
 
   .hero-brands__wilson {
-    width: 2.2rem;
+    width: 2rem;
   }
 
   .hero-brands__oe {
-    width: 86px;
+    width: 72px;
   }
 
   .report-section {
