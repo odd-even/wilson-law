@@ -65,3 +65,5 @@ Format: `YYYY-MM-DD` · short title · what happened · artifacts / next
 
 - **Logo** — Swapped to official O+E icon SVG (`reports/assets/oe-icon.svg`), white fill for dark report chrome. Source: Company Branding `OE_Icon.svg`.
 - **Next** — GSC screenshots; GBP detail; vendors.
+- **GitHub** — Pushed to private repo https://github.com/odd-even/wilson-law. Pages unavailable for private repos on current plan.
+- **Next** — Team with repo access can open the HTML; for a live URL, deploy (Vercel) or adjust visibility.
