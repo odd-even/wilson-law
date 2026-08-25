@@ -37,6 +37,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  scroll-padding-top: 5.5rem;
 }
 
 body {
@@ -157,23 +158,23 @@ a:hover {
 /* ---------- Nav ---------- */
 
 .report-nav {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
   display: flex;
   flex-wrap: wrap;
   gap: 0.65rem 1.25rem;
   align-items: center;
   padding: 0.65rem var(--oe-pad);
-  background: rgba(0, 0, 0, 0.42);
-  backdrop-filter: blur(18px) saturate(1.35);
-  -webkit-backdrop-filter: blur(18px) saturate(1.35);
+  background: rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(20px) saturate(1.45);
+  -webkit-backdrop-filter: blur(20px) saturate(1.45);
   color: var(--oe-white);
   font-size: 0.75rem;
   font-weight: 500;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  /* contain absolute progress bar */
-  isolation: isolate;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .report-nav .report-nav-title {
@@ -288,6 +289,10 @@ a:hover {
 }
 
 @media screen and (max-width: 720px) {
+  html {
+    scroll-padding-top: 6.5rem;
+  }
+
   .report-nav {
     font-size: 0.7rem;
     gap: 0.5rem;
@@ -392,6 +397,7 @@ a:hover {
   align-items: center;
   gap: 1.75rem;
   padding: clamp(3.5rem, 11vw, 7rem) var(--oe-pad);
+  padding-top: calc(clamp(3.5rem, 11vw, 7rem) + 3.75rem);
   padding-bottom: clamp(5.5rem, 12vw, 7.5rem);
   background: var(--oe-black);
   color: var(--oe-white);
@@ -2101,7 +2107,7 @@ body.lightbox-open {
   .hero {
     min-height: min(92vh, 40rem);
     gap: 1.25rem;
-    padding-top: clamp(3.25rem, 12vw, 5rem);
+    padding-top: calc(clamp(3.25rem, 12vw, 5rem) + 5.25rem);
     padding-bottom: clamp(2rem, 8vw, 2.75rem);
     justify-content: flex-start;
   }
