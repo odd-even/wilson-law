@@ -18,6 +18,8 @@
     ".report-section .oe-table",
     ".report-section .checklist",
     ".report-section .check-list",
+    ".report-section .month-compare",
+    ".report-section .wilson-review",
     ".report-section .shot--zoom",
     ".report-section .evidence-grid",
     ".report-section .subhead",

@@ -85,3 +85,5 @@ Format: `YYYY-MM-DD` · short title · what happened · artifacts / next
 - **Process drop** — Replaced GBP SERP/manager overview with full-res `_assets/gbp/2026-08-25_gbp-serp-manager-overview.png` (2694×2446). Prior chat copy kept as `…-chat-1024.jpg`. Notes: 1,110 interactions · hours Opens 8:30 a.m. · same Google suggestions. Report GBP section updated.
 
 - **Process drop** — GBP Performance (Mar–Aug 2026): overview, calls, directions, website clicks → `_assets/gbp/2026-08-25_gbp-performance-*.png`. Totals: **1,110** interactions · **5,265** views · **685** searches showed profile · **354** calls · **304** directions · **452** website clicks. Top terms: real estate attorney roanoke va (311), wilson (214). Finding: `findings/2026-08-gbp-performance.md`. Wired into August HTML GBP section.
+
+- **Recommendation added** — Contact page still says “this site is not secure” while dougwilsonlaw.com is HTTPS. Flagged for Wilson team review with suggested replacement disclaimer (confidentiality / attorney-client — no “not secure” claim). In August HTML findings.

@@ -47,6 +47,7 @@ Optional month subfolders later if volume grows (`gbp/2026-08/…`). For now, fl
 | 2026-08-25 | `gbp/2026-08-25_gbp-performance-calls.png` | gbp | findings/2026-08-gbp-performance.md, reports/2026-08-digital-presence.html |
 | 2026-08-25 | `gbp/2026-08-25_gbp-performance-directions.png` | gbp | findings/2026-08-gbp-performance.md, reports/2026-08-digital-presence.html |
 | 2026-08-25 | `gbp/2026-08-25_gbp-performance-website-clicks.png` | gbp | findings/2026-08-gbp-performance.md, reports/2026-08-digital-presence.html |
+| 2026-08-25 | `gbp/2026-08-25_gbp-service-areas.png` | gbp | Reference (service areas listed in Wilson review copy) |
 | 2026-08-25 | `squarespace/2026-08-25_ai-visibility-openai-run.png` | squarespace | findings/2026-08-ai-visibility.md, monthly-reports/2026-08.md, reports/2026-08-digital-presence.html |
 | 2026-08-25 | `gsc/2026-08-25_gsc-verified-squarespace.png` | gsc | findings/2026-08-gsc-verified.md, inputs/gsc.md, reports/2026-08-digital-presence.html |
 | 2026-08-25 | `gsc/2026-08-25_gsc-sitemaps-success.png` | gsc | findings/2026-08-gsc-sitemaps.md, inputs/gsc.md, reports/2026-08-digital-presence.html |

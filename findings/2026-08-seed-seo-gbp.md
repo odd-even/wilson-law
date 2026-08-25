@@ -12,6 +12,7 @@
 | Practice areas | One combined page; no separate landers | Medium | Open |
 | Sitemap | `/sitemap.xml` in Search Console · Success · 4 pages | Info | Confirmed 2026-08-25 |
 | Utility page | `/cart` exists | Low–Med | Open |
+| Contact | **Wilson review** — Contact disclaimer says “not secure”; site is HTTPS. Proposed replacement in report § Please review &amp; approve. Email ernest@oddpluseven.com with approval. | Med | Awaiting Wilson |
 | Organic brand SERP | #1 for “wilson law firm roanoke, va” with sitelinks | Positive | Noted |
 
 **Asset:** `_assets/gbp/2026-08-25_gbp-serp-manager-overview.png` (full-res 2694×2446 · replaced chat-compressed copy 2026-08-25)
