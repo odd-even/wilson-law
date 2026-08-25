@@ -447,7 +447,8 @@ a:hover {
 .hero {
   position: relative;
   isolation: isolate;
-  min-height: 78vh;
+  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2167,7 +2168,8 @@ body.lightbox-open {
   }
 
   .hero {
-    min-height: min(92vh, 40rem);
+    min-height: 100vh;
+    min-height: 100dvh;
     gap: 1.25rem;
     padding-top: calc(clamp(3.25rem, 12vw, 5rem) + 5.25rem);
     padding-bottom: clamp(4.5rem, 14vw, 5.5rem);
