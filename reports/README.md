@@ -26,13 +26,15 @@ HTML reports for Wilson Law use a **web-native** layout inspired by the Legacy A
 
 ## Patterns
 
-- **Hero** — `.hero` black band with white `oe-icon.svg`
+- **Hero** — centered `.hero-title` · O+E mark bottom-right · optional `.hero-eyebrow`
 - **Statement band** — `.band` + `.lede`
 - **Content section** — `.report-section` (+ optional `--muted` / `--dark`)
-- **Header block** — `.eyebrow` + `.section-title` (h1)
+- **Header block** — `.eyebrow` + `.section-title` (h1) with accent underline
 - **Keyword** — `<span class="kw">…</span>`
-- **Stats** — `.stat-row`
+- **Stats** — `.stat-row` / `.dash-grid` (raised cards, blue top edge)
 - **Tables** — `.oe-table`
 - **Footer** — `.report-footer`
+
+Atmosphere: soft page gradients, section motion (respects `prefers-reduced-motion`), hover lift on stats/shots.
 
 Reference PDF (look only): `_assets/misc/SEO_Report_Legacy-Advisors_R3_design-ref.pdf`

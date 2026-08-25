@@ -13,7 +13,7 @@ Format: `YYYY-MM-DD` · short title · what happened · artifacts / next
 - **Access confirmed** — Google Business Profile; Squarespace admin. GSC / GA4 still to confirm.
 - **Tracking set up** — README, tracker, activity log, findings, monthly report template + Aug 2026 draft started.
 - **Assets folder** — `_assets/` with subfolders (`gbp`, `reviews`, `squarespace`, `gsc`, `ga4`, `vendors`, `reports`, `misc`). Screenshots will be filed here and cited in reports.
-- **Seed findings logged** — Sitemap error, `/cart` page, home typo (WIlson), contact “not secure” copy, ~4.1★ / ~23–24 Google reviews (public sources; confirm in GBP).
+- **Seed findings logged** — Sitemap error, `/cart` page, ~4.1★ / ~23–24 Google reviews (public sources; confirm in GBP).
 - **Next** — Client sends screenshots (GBP, Squarespace, etc.); file under `_assets/` and compile into findings / Aug report.
 
 - **Asset received** — `_assets/gbp/2026-08-25_gbp-serp-manager-overview.png` (SERP + manager panel for query “wilson law firm roanoke, va”).
@@ -69,3 +69,19 @@ Format: `YYYY-MM-DD` · short title · what happened · artifacts / next
 - **Next** — Team with repo access can open the HTML; for a live URL, deploy (Vercel) or adjust visibility.
 
 - **Dashboard** — Added `reports/dashboard.html`: done so far, identified next actions, September checklist. Index links Dashboard + August report.
+
+- **Visual polish** — Enhanced `oe-report.css`: blue/mint atmospheric heroes, raised stat cards, stronger section headers, motion, shared dashboard components. Same Poppins + brand colors.
+
+- **Evidence inline** — Source screenshots placed under each report section (GBP, Website, AI, Traffic, Pages, Conversions) with shared lightbox; end gallery removed.
+
+- **Asset received** — `_assets/squarespace/2026-08-25_traffic-last-year-2025.png` (Squarespace Traffic · Jan 1–Dec 31, 2025 · 5,346 visits +92% YoY). Added under Site traffic in August report + findings.
+
+- **Asset received** — `_assets/gsc/2026-08-25_gsc-verified-squarespace.png` (GSC verification via Squarespace for https://www.dougwilsonlaw.com/). Status → Verified; Sitemaps/Coverage still open.
+
+- **Drop inbox** — Added repo-root `drop/` for full-size screenshots. Say “process drop” to rename, file into `_assets/{gbp,squarespace,gsc,…}/`, log, and update reports. Prefer over chat paste (chat compresses).
+
+- **Process drop** — Filed `_assets/gsc/2026-08-25_gsc-sitemaps-success.png` (1862×504). GSC `/sitemap.xml` · Success · 4 pages · submitted/read Aug 25, 2026. Updated report, dashboard, inputs/gsc.md.
+
+- **Process drop** — Replaced GBP SERP/manager overview with full-res `_assets/gbp/2026-08-25_gbp-serp-manager-overview.png` (2694×2446). Prior chat copy kept as `…-chat-1024.jpg`. Notes: 1,110 interactions · hours Opens 8:30 a.m. · same Google suggestions. Report GBP section updated.
+
+- **Process drop** — GBP Performance (Mar–Aug 2026): overview, calls, directions, website clicks → `_assets/gbp/2026-08-25_gbp-performance-*.png`. Totals: **1,110** interactions · **5,265** views · **685** searches showed profile · **354** calls · **304** directions · **452** website clicks. Top terms: real estate attorney roanoke va (311), wilson (214). Finding: `findings/2026-08-gbp-performance.md`. Wired into August HTML GBP section.

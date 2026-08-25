@@ -37,8 +37,8 @@
 
 **Technical / crawl**
 - [ ] Verify HTTPS, redirects (http→https, www vs non-www), and canonical URLs
-- [x] Confirm Google Search Console property is verified *(sitemap submission + coverage still to screenshot/verify)*
-- [ ] Fix / investigate sitemap issues (`sitemap.xml` currently errors; robots.txt still points to it)
+- [x] Confirm Google Search Console property is verified
+- [x] Confirm sitemap submitted in GSC (`/sitemap.xml` · Success · 4 pages, 2026-08-25)
 - [ ] Check indexation: which pages are indexed, any soft-404s, thin pages (e.g. `/cart`)
 - [ ] Review page titles, meta descriptions, H1s on Home, Practice Areas, About, Contact
 - [ ] Check mobile usability and Core Web Vitals at a high level (Squarespace baseline)
@@ -46,13 +46,12 @@
 **Content / structure**
 - [ ] Audit practice-area coverage: Real Estate, Corporate/LLC, Estate Planning, Probate — depth, uniqueness, local relevance (Roanoke / New River Valley / SML)
 - [ ] Note opportunities for dedicated practice landing pages vs. single combined Practice Areas page (only if useful for search intent; avoid bloated consumer SEO)
-- [ ] Capture content hygiene issues already visible (e.g. typo “Douglas S. WIlson”; contact copy saying site is “not secure”)
 - [ ] Confirm NAP consistency on site footer/contact vs. GBP (4725 Garst Mill Road, Suite 3 · (540) 767-1174 · info@dougwilsonlaw.com)
 - [ ] Review attorney bio pages / About for completeness and schema opportunities (LocalBusiness / Attorney — light touch)
 - [ ] Confirm CTAs and contact paths are clear (Meet with an Attorney / Schedule a Meeting)
 
 **Refresh backlog (prioritized)**
-- [ ] Quick wins (typos, titles/metas, NAP, sitemap, remove/noindex junk pages)
+- [ ] Quick wins (titles/metas, NAP, sitemap, remove/noindex junk pages)
 - [ ] Medium (practice copy refresh, FAQ blocks, internal links)
 - [ ] Later / optional (new landing pages, blog — only if strategy supports it)
 
@@ -130,8 +129,7 @@
 |------|-------------|
 | Platform | Squarespace |
 | Pages | Home, Practice Areas, About Us, Contact (+ cart URL exists) |
-| Sitemap | `robots.txt` references sitemap; fetch of `sitemap.xml` failed (500) |
+| Sitemap | GSC `/sitemap.xml` · Success · 4 pages (2026-08-25) |
 | Content | Strong practice focus; single Practice Areas page, not separate landers |
-| Copy | Typo on home (“WIlson”); Contact page states site is “not secure” |
 | GBP (public) | ~4.1★ / ~23–24 reviews; confirm in-product |
 | Positioning | Family/Christian values, transactional only — keep marketing tone aligned |

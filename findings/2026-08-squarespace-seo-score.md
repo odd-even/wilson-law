@@ -35,4 +35,4 @@ Aligns with the four core pages (Home, Practice Areas, About, Contact). Metadata
 ## Notes
 
 - On-page Squarespace SEO basics look complete (meta + alt).
-- Remaining SEO work is outside this checklist: sitemap/GSC health, copy/trust fixes, GBP polish, content depth — not “fill missing meta.”
+- Remaining SEO work outside this checklist: copy/trust fixes, GBP polish, content depth — not “fill missing meta.”

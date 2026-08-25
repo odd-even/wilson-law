@@ -9,8 +9,9 @@ Working files for Wilson Law Firm, PLC (Roanoke, VA) — website, SEO, Google pr
 
 | Path | Purpose |
 |------|---------|
-| `_assets/` | Screenshots & exports (organized by source) — evidence for reports |
-| `reports/` | **HTML client reports** (O+E Legacy SEO design system) |
+| `drop/` | **Inbox** — drop full-size screenshots here, then say “process drop” |
+| `_assets/` | Filed screenshots & exports (organized by source) |
+| `reports/` | **HTML client reports** (O+E design system) |
 | `tracker.md` | Living status — what’s active, blocked, done |
 | `activity-log.md` | Dated log of work (feeds monthly reports) |
 | `action-items/` | Scoped checklists by engagement |
@@ -20,10 +21,11 @@ Working files for Wilson Law Firm, PLC (Roanoke, VA) — website, SEO, Google pr
 
 ## How we use this for monthly reports
 
-1. You send screenshots → filed under `_assets/{gbp,squarespace,gsc,…}/`
-2. Work + assets logged in `activity-log.md`
-3. Status stays current in `tracker.md`
-4. Markdown draft in `monthly-reports/` → **HTML deck in `reports/`** (Poppins, landscape slides, O+E mark — same system as Legacy Advisors SEO PDF)
+1. Drop full-size screenshots in `drop/` → say **“process drop”** (avoid chat paste — it compresses images)
+2. Files get renamed and moved into `_assets/{gbp,squarespace,gsc,…}/`
+3. Work + assets logged in `activity-log.md`
+4. Status stays current in `tracker.md`
+5. Markdown draft in `monthly-reports/` → **HTML report in `reports/`**
 
 ## Access (confirmed)
 

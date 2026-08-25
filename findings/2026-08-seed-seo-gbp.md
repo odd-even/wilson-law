@@ -10,13 +10,11 @@
 | Platform | Squarespace (ODD + EVEN) | Info | Noted |
 | Structure | Home, Practice Areas, About Us, Contact | Info | Noted |
 | Practice areas | One combined page; no separate landers | Medium | Open |
-| Sitemap | `robots.txt` points to sitemap; `sitemap.xml` returned 500 | High | Open |
+| Sitemap | `/sitemap.xml` in Search Console · Success · 4 pages | Info | Confirmed 2026-08-25 |
 | Utility page | `/cart` exists | Low–Med | Open |
-| Copy | “Douglas S. WIlson” typo on home | Quick win | Open |
-| Contact | Copy says site is “not secure” | Quick win | Open |
 | Organic brand SERP | #1 for “wilson law firm roanoke, va” with sitelinks | Positive | Noted |
 
-**Asset:** `_assets/gbp/2026-08-25_gbp-serp-manager-overview.png`
+**Asset:** `_assets/gbp/2026-08-25_gbp-serp-manager-overview.png` (full-res 2694×2446 · replaced chat-compressed copy 2026-08-25)
 
 ## Google Business Profile (from manager SERP screenshot)
 
@@ -49,7 +47,7 @@
 | Google Business Profile | Confirmed (+ screenshot) |
 | Squarespace | Confirmed (no screenshots yet) |
 | Google Analytics | **GA4 `G-NWL3L04PQQ`** installed 2026-08-25 — confirm user access |
-| Search Console | **Added** (2026-08-25) — confirm sitemap submission + coverage |
+| Search Console | **Verified** · sitemap Success (4 pages) |
 | Paid SEO/review vendors | TBD |
 
 ## Still needed
@@ -58,5 +56,5 @@
 - Reviews list + whether replies are used → `_assets/reviews/`
 - Squarespace pages list / SEO → `_assets/squarespace/`
 - Vendor/cost list
-- GSC → `_assets/gsc/`: Sitemaps, Pages/Coverage, Performance
+- Optional GSC Pages/Coverage + Performance
 - Optional `_assets/ga4/` realtime screenshot; confirm who can open the GA4 property
