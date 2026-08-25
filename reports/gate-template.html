@@ -27,7 +27,7 @@
 
             .staticrypt-page {
                 width: 100%;
-                max-width: 22rem;
+                max-width: 26rem;
                 padding: 0 1.25rem;
                 margin: auto;
                 box-sizing: border-box;
@@ -39,7 +39,7 @@
                 background: rgba(255, 255, 255, 0.06);
                 border: 0.5px solid rgba(255, 255, 255, 0.18);
                 border-radius: 20px;
-                max-width: 22rem;
+                max-width: 26rem;
                 margin: 0 auto;
                 padding: 2rem 1.5rem;
                 text-align: center;
@@ -92,9 +92,9 @@
             .staticrypt-form .staticrypt-decrypt-button {
                 text-transform: uppercase;
                 outline: 0;
-                background: /*[|template_color_primary|]*/ 0;
+                background: #fff;
                 width: 100%;
-                border: 0;
+                border: 1px solid #fff;
                 border-radius: 999px;
                 padding: 15px;
                 color: #000;
@@ -103,13 +103,16 @@
                 letter-spacing: 0.06em;
                 font-family: "Poppins", system-ui, sans-serif;
                 cursor: pointer;
+                transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
             }
 
             .staticrypt-form .staticrypt-decrypt-button:hover,
             .staticrypt-form .staticrypt-decrypt-button:active,
             .staticrypt-form .staticrypt-decrypt-button:focus {
-                background: /*[|template_color_primary|]*/ 0;
-                filter: brightness(1.05);
+                background: #000;
+                color: #fff;
+                border-color: #fff;
+                filter: none;
             }
 
             .staticrypt-html {
