@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wilson Law — Digital Presence Dashboard</title>
+  <link rel="stylesheet" href="css/oe-report.css" />
+  <style>
+    .dash-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin: 1.5rem 0 0;
+    }
+    .dash-card {
+      border-top: 2px solid #000;
+      padding-top: 0.85rem;
+    }
+    .dash-card .stat-value {
+      font-size: 1.65rem;
+    }
+    .status-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1rem 0 0;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 0.35rem 0.6rem;
+      border-radius: 2px;
+      background: #eee;
+      color: #333;
+    }
+    .pill--done { background: #08a866; color: #fff; }
+    .pill--progress { background: #54abe5; color: #fff; }
+    .pill--wait { background: #000; color: #fff; }
+    .pill--todo { background: #eee; color: #333; }
+    .check-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .check-list li {
+      display: grid;
+      grid-template-columns: 1.4rem 1fr;
+      gap: 0.65rem;
+      align-items: start;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid #e6e6e6;
+      font-size: 0.95rem;
+      line-height: 1.45;
+    }
+    .check-list li:last-child { border-bottom: none; }
+    .check-list .box {
+      width: 1.05rem;
+      height: 1.05rem;
+      border: 1.5px solid #000;
+      margin-top: 0.15rem;
+      flex-shrink: 0;
+    }
+    .check-list .box--done {
+      background: #08a866;
+      border-color: #08a866;
+      position: relative;
+    }
+    .check-list .box--done::after {
+      content: "";
+      position: absolute;
+      left: 0.22rem;
+      top: 0.05rem;
+      width: 0.35rem;
+      height: 0.6rem;
+      border: solid #fff;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+    .done-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      columns: 2;
+      column-gap: 2rem;
+    }
+    .done-list li {
+      break-inside: avoid;
+      padding: 0.45rem 0 0.45rem 1.15rem;
+      position: relative;
+      font-size: 0.92rem;
+      line-height: 1.4;
+      border-bottom: 1px solid #eee;
+    }
+    .done-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.75em;
+      width: 0.4em;
+      height: 0.4em;
+      border-radius: 50%;
+      background: #08a866;
+    }
+    .priority {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #8a8c8f;
+      display: block;
+      margin-bottom: 0.15rem;
+    }
+    .priority--high { color: #000; }
+    .priority--med { color: #54abe5; }
+    .split-3 {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      gap: 2rem;
+    }
+    @media (max-width: 900px) {
+      .dash-grid, .done-list, .split-3 { grid-template-columns: 1fr; columns: 1; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="report-nav">
+    <span class="report-nav-title">Wilson Law · Dashboard · Aug 2026</span>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="2026-08-digital-presence.html">Full report</a>
+  </nav>
+
+  <main class="report">
+    <header class="hero" style="min-height:auto;padding-top:3rem;padding-bottom:2.5rem;">
+      <img class="wordmark" src="assets/oe-icon.svg" alt="ODD + EVEN" />
+      <p class="hero-meta">Wilson Law Firm, PLC · Digital Presence Dashboard · As of Aug 25, 2026</p>
+    </header>
+
+    <!-- SNAPSHOT -->
+    <section class="report-section">
+      <div class="report-inner--wide" style="margin:0 auto;">
+        <header class="section-header">
+          <p class="eyebrow">At a glance</p>
+          <h1 class="section-title">Where we are</h1>
+        </header>
+        <p class="prose">
+          Digital Presence + SEO review is underway. Core tools are connected,
+          baselines are logged, and August reporting is drafted.
+          Next focus: finish GBP / GSC detail, vendors, and a light September checklist.
+        </p>
+        <div class="dash-grid">
+          <div class="dash-card">
+            <p class="stat-value">4.2★</p>
+            <p class="stat-label">Google reviews · 24</p>
+          </div>
+          <div class="dash-card">
+            <p class="stat-value">582</p>
+            <p class="stat-label">Site visits · 30 days</p>
+          </div>
+          <div class="dash-card">
+            <p class="stat-value">10</p>
+            <p class="stat-label">Form submissions · 30 days</p>
+          </div>
+          <div class="dash-card">
+            <p class="stat-value">3/10</p>
+            <p class="stat-label">AI Visibility · OpenAI</p>
+          </div>
+        </div>
+        <div class="status-row">
+          <span class="pill pill--done">GA4 live</span>
+          <span class="pill pill--done">Search Console live</span>
+          <span class="pill pill--done">GBP access</span>
+          <span class="pill pill--done">Squarespace access</span>
+          <span class="pill pill--progress">GBP audit</span>
+          <span class="pill pill--progress">Website SEO</span>
+          <span class="pill pill--wait">Vendors</span>
+          <span class="pill pill--todo">Reviews SOP</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- DONE -->
+    <section class="report-section report-section--muted">
+      <div class="report-inner--wide" style="margin:0 auto;">
+        <header class="section-header">
+          <p class="eyebrow">Completed</p>
+          <h1 class="section-title">What we’ve done so far</h1>
+        </header>
+        <ul class="done-list">
+          <li>Scoped Digital Presence + SEO review (credibility focus, not consumer lead-gen)</li>
+          <li>Built tracking system: tracker, activity log, findings, <code>_assets/</code>, monthly drafts</li>
+          <li>O+E HTML report design system + August report draft</li>
+          <li>Confirmed admin: GBP, Squarespace, GA4 (<code>G-NWL3L04PQQ</code>), Search Console</li>
+          <li>GBP baseline: 4.2★ / 24 reviews · ~963 search views · NAP check</li>
+          <li>Brand SERP: #1 with sitelinks for “wilson law firm roanoke, va”</li>
+          <li>Squarespace SEO score 80% · metadata 4/4 · alt text 21/21</li>
+          <li>AI Visibility baseline: 3/10 (documented hit + name-collision miss)</li>
+          <li>Traffic baseline: 582 visits · Direct 64% · Google 27%</li>
+          <li>Top pages: Home 541 · Practice Areas 141 · About 130 · Contact 101</li>
+          <li>Conversions: 10 forms (−38% MoM) · Contact CVR 13.2% · 37 button clicks</li>
+          <li>Repo pushed for team: github.com/odd-even/wilson-law</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- IDENTIFIED -->
+    <section class="report-section">
+      <div class="report-inner--wide" style="margin:0 auto;">
+        <header class="section-header">
+          <p class="eyebrow">Findings</p>
+          <h1 class="section-title">What we’ve identified</h1>
+        </header>
+        <div class="split-3">
+          <div>
+            <h2 class="subhead">Fix soon</h2>
+            <ul class="checklist">
+              <li><span class="priority priority--high">High</span> Sitemap.xml returning 500 (robots still references it)</li>
+              <li><span class="priority priority--high">High</span> Vendor / tool inventory missing — can’t keep/cut yet</li>
+              <li><span class="priority priority--med">Med</span> Home typo “WIlson”; Contact “not secure” copy</li>
+              <li><span class="priority priority--med">Med</span> GBP still needs categories/services/hours + review replies process</li>
+              <li><span class="priority priority--med">Med</span> GSC sitemap submission + coverage not yet screenshot/verified</li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="subhead">Watch</h2>
+            <ul class="checklist">
+              <li><span class="priority priority--med">Med</span> AI name collision: “Wilson Law Firm” → AZ/MN firms unless Roanoke is specified</li>
+              <li><span class="priority priority--med">Med</span> Form submissions down 38% MoM (small sample — trend next month)</li>
+              <li><span class="priority priority--med">Med</span> Google asks: directions on website + exterior photo</li>
+              <li><span class="priority">Info</span> About page long dwell but 94% bounce (normal for bios)</li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="subhead">Positive</h2>
+            <ul class="checklist">
+              <li><span class="priority">Info</span> Brand search + sitelinks healthy</li>
+              <li><span class="priority">Info</span> SQSP platform SEO checklist complete</li>
+              <li><span class="priority">Info</span> Probate + Roanoke AI prompt cites correct firm + NAP</li>
+              <li><span class="priority">Info</span> Contact form CVR 13.2% is solid for this firm type</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WAITING -->
+    <section class="report-section report-section--muted">
+      <div class="report-inner--wide" style="margin:0 auto;">
+        <header class="section-header">
+          <p class="eyebrow">Blocked</p>
+          <h1 class="section-title">Waiting on inputs</h1>
+        </header>
+        <table class="oe-table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Waiting on</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>GBP audit (detail)</td>
+              <td>Edit profile · categories · services · hours · reviews screenshots</td>
+            </tr>
+            <tr>
+              <td>Vendor keep / replace / cut</td>
+              <td>Paid SEO / review / listing tool list + costs</td>
+            </tr>
+            <tr>
+              <td>GSC indexation review</td>
+              <td>Sitemaps + Pages/Coverage screenshots</td>
+            </tr>
+            <tr>
+              <td>Review response SOP</td>
+              <td>Who monitors / replies to Google reviews</td>
+            </tr>
+            <tr>
+              <td>GA access confirm</td>
+              <td>Who has access to property <code>G-NWL3L04PQQ</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- NEXT MONTH -->
+    <section class="report-section" id="september">
+      <div class="report-inner--wide" style="margin:0 auto;">
+        <header class="section-header">
+          <p class="eyebrow">September 2026</p>
+          <h1 class="section-title">Checklist for next month</h1>
+        </header>
+        <p class="prose" style="margin-bottom:1.25rem;">
+          Light cadence — maintain credibility and close open audit items.
+          Not an aggressive SEO campaign.
+        </p>
+        <div class="two-col">
+          <div>
+            <h2 class="subhead">Must complete</h2>
+            <ul class="check-list">
+              <li><span class="box"></span><span><strong>Finish GBP audit</strong> — categories, services, hours, photos; act on directions + exterior photo if approved</span></li>
+              <li><span class="box"></span><span><strong>GSC hygiene</strong> — confirm sitemap submitted; capture Pages/Coverage; note any index issues</span></li>
+              <li><span class="box"></span><span><strong>Quick site fixes</strong> — typo “WIlson”; Contact “not secure” language; investigate sitemap 500</span></li>
+              <li><span class="box"></span><span><strong>Vendor inventory</strong> — list tools/costs → keep / replace / discontinue memo</span></li>
+              <li><span class="box"></span><span><strong>Review SOP</strong> — who monitors, response SLA, ethical ask process</span></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="subhead">Recurring (monthly)</h2>
+            <ul class="check-list">
+              <li><span class="box"></span><span>Pull Squarespace traffic + conversions (vs Aug: 582 visits / 10 forms)</span></li>
+              <li><span class="box"></span><span>Re-run AI Visibility; compare to <strong>3/10</strong>; keep Roanoke/VA in prompts</span></li>
+              <li><span class="box"></span><span>Check new Google reviews + reply as needed</span></li>
+              <li><span class="box"></span><span>Spot-check GBP NAP / hours accuracy</span></li>
+              <li><span class="box"></span><span>Update September HTML report + dashboard from activity log</span></li>
+              <li><span class="box"></span><span>Propose light ongoing support cadence (once audit closes)</span></li>
+            </ul>
+          </div>
+        </div>
+        <div style="margin-top:2rem;">
+          <h2 class="subhead">Already done (don’t re-open)</h2>
+          <ul class="check-list">
+            <li><span class="box box--done"></span><span>Add Google Analytics (<code>G-NWL3L04PQQ</code>)</span></li>
+            <li><span class="box box--done"></span><span>Add Google Search Console</span></li>
+            <li><span class="box box--done"></span><span>August baselines logged (GBP, traffic, pages, conversions, AI Visibility)</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="report-inner">
+        <p class="lede">
+          Full narrative report:
+          <a href="2026-08-digital-presence.html" style="color:#69d6ad;">August Digital Presence + SEO</a>
+        </p>
+      </div>
+    </section>
+
+    <footer class="report-footer">
+      <div class="report-footer-brand">
+        <img class="mark mark--lg" src="assets/oe-icon.svg" alt="" />
+        <p>A Seriously Fun Creative Agency.</p>
+      </div>
+      <a href="https://www.oddpluseven.com/">oddpluseven.com</a>
+    </footer>
+  </main>
+</body>
+</html>

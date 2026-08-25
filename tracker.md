@@ -63,7 +63,8 @@ Full checklist: [`action-items/digital-presence-seo-review.md`](action-items/dig
 
 ## Monthly report draft
 
-- Design system: [`reports/README.md`](reports/README.md) (matches Legacy Advisors SEO PDF)
+- **Dashboard (team view):** [`reports/dashboard.html`](reports/dashboard.html)
+- Design system: [`reports/README.md`](reports/README.md)
 - HTML report (client-facing): [`reports/2026-08-digital-presence.html`](reports/2026-08-digital-presence.html)
 - Markdown working draft: [`monthly-reports/2026-08.md`](monthly-reports/2026-08.md)
 - Template: [`reports/_template.html`](reports/_template.html)

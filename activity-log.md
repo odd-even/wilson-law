@@ -67,3 +67,5 @@ Format: `YYYY-MM-DD` · short title · what happened · artifacts / next
 - **Next** — GSC screenshots; GBP detail; vendors.
 - **GitHub** — Pushed to private repo https://github.com/odd-even/wilson-law. Pages unavailable for private repos on current plan.
 - **Next** — Team with repo access can open the HTML; for a live URL, deploy (Vercel) or adjust visibility.
+
+- **Dashboard** — Added `reports/dashboard.html`: done so far, identified next actions, September checklist. Index links Dashboard + August report.
