@@ -21,7 +21,7 @@ npx --yes staticrypt \
   --remember 30 \
   --short \
   --template reports/gate-template.html \
-  --template-title "Wilson Law · August Report" \
+  --template-title "Digital Presence" \
   --template-instructions "Password-protected client report. Enter the password from ODD + EVEN to continue." \
   --template-button "Open report" \
   --template-placeholder "Password" \

@@ -153,18 +153,45 @@
 
             .staticrypt-instructions {
                 margin: 0 0 0.25rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0.85rem;
             }
 
             .staticrypt-instructions p {
-                margin: 0 0 0.65rem;
+                margin: 0;
                 font-weight: 300;
                 color: rgba(255, 255, 255, 0.55);
                 line-height: 1.5;
                 font-size: 0.9rem;
             }
 
+            .gate-bubble {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                padding: 0.9em 1.7em;
+                font-size: clamp(0.68rem, 1.3vw, 0.78rem);
+                font-weight: 500;
+                letter-spacing: 0.08em;
+                line-height: 1;
+                text-transform: uppercase;
+                color: rgba(255, 255, 255, 0.92);
+                white-space: nowrap;
+                border-radius: 999px;
+                border: 0.5px solid rgba(255, 255, 255, 0.28);
+                background:
+                  radial-gradient(ellipse 70% 90% at 100% 0%, rgba(84, 171, 229, 0.34), transparent 55%),
+                  radial-gradient(ellipse 70% 90% at 0% 100%, rgba(105, 214, 173, 0.3), transparent 55%),
+                  rgba(255, 255, 255, 0.06);
+                backdrop-filter: blur(12px) saturate(1.6);
+                -webkit-backdrop-filter: blur(12px) saturate(1.6);
+            }
+
             .staticrypt-title {
-                font-size: 1.35rem !important;
+                font-size: 1.45rem !important;
                 font-weight: 600 !important;
                 letter-spacing: -0.02em;
                 color: #fff !important;
@@ -233,6 +260,7 @@
             <div class="staticrypt-page">
                 <div class="staticrypt-form">
                     <div class="staticrypt-instructions">
+                        <p class="gate-bubble">August Report</p>
                         <p class="staticrypt-title">/*[|template_title|]*/0</p>
                         <p>/*[|template_instructions|]*/0</p>
                     </div>

@@ -2,7 +2,7 @@
 <html class="staticrypt-html">
     <head>
         <meta charset="utf-8" />
-        <title>Wilson Law · August Report</title>
+        <title>Digital Presence</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <!-- do not cache this page -->
@@ -153,18 +153,45 @@
 
             .staticrypt-instructions {
                 margin: 0 0 0.25rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0.85rem;
             }
 
             .staticrypt-instructions p {
-                margin: 0 0 0.65rem;
+                margin: 0;
                 font-weight: 300;
                 color: rgba(255, 255, 255, 0.55);
                 line-height: 1.5;
                 font-size: 0.9rem;
             }
 
+            .gate-bubble {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                padding: 0.9em 1.7em;
+                font-size: clamp(0.68rem, 1.3vw, 0.78rem);
+                font-weight: 500;
+                letter-spacing: 0.08em;
+                line-height: 1;
+                text-transform: uppercase;
+                color: rgba(255, 255, 255, 0.92);
+                white-space: nowrap;
+                border-radius: 999px;
+                border: 0.5px solid rgba(255, 255, 255, 0.28);
+                background:
+                  radial-gradient(ellipse 70% 90% at 100% 0%, rgba(84, 171, 229, 0.34), transparent 55%),
+                  radial-gradient(ellipse 70% 90% at 0% 100%, rgba(105, 214, 173, 0.3), transparent 55%),
+                  rgba(255, 255, 255, 0.06);
+                backdrop-filter: blur(12px) saturate(1.6);
+                -webkit-backdrop-filter: blur(12px) saturate(1.6);
+            }
+
             .staticrypt-title {
-                font-size: 1.35rem !important;
+                font-size: 1.45rem !important;
                 font-weight: 600 !important;
                 letter-spacing: -0.02em;
                 color: #fff !important;
@@ -233,7 +260,8 @@
             <div class="staticrypt-page">
                 <div class="staticrypt-form">
                     <div class="staticrypt-instructions">
-                        <p class="staticrypt-title">Wilson Law · August Report</p>
+                        <p class="gate-bubble">August Report</p>
+                        <p class="staticrypt-title">Digital Presence</p>
                         <p>Password-protected client report. Enter the password from ODD + EVEN to continue.</p>
                     </div>
 
@@ -870,7 +898,7 @@ exports.init = init;
                 templateToggleAltShow = "Show password",
                 templateToggleAltHide = "Hide password",
                 isRememberEnabled = true,
-                staticryptConfig = {"staticryptEncryptedMsgUniqueVariableName":"a7b0868a9bace9b16cf38a73f26dbef14cdcaafc19e24c0b707a0631b908ec8a8761ffb4cf551707506b46fcc8f13f71d3f65ecf93d5be563341a7c6639946c3fd248891f2dd40bbab7f585a2b44b39eb26f505a2b098bd77be9cd3fc472bd9faa7c0137985fb1c6a40f525df8aec050d5c38e74d4d8d86c5348c4a98239bfdaf24588327b21376558ff13c40c62b40fa163aedea92b7205f5b07c7ddcd16ceb03bf1509a225242a1c6b23d05d38bad621286771685f0cf16f2b1d78087a7ac46162b68e1192c26cd45119085583ac18481501a95ba2c0ae049627ce9f831342cb04b1cd2e5d20df8b02924346248adcd763452bc2be7d56e158f94842d57d0cfda79850fb105e255e6a0958f1f715cd137d83f29f9626848d554fc1afed34c8dbb634b86925b187f9c2b7a753df0343461244d39f435c844c85168d6885b06e90e820864af8123d19ca9a34cdbb613e90218842440a47b7446d0874fdde74b03c0b25b3034c7e0d65d53660982a5febd33a4e9593158279eba178d65a6c6581a5eb6899c42eca7604654c99bb8ac3534619cd04c761b9970bf84ef5a3b6c3fef5fa5ec23322188a01f93d2af6122f2a34101b2f61fe0a59a1b07c532c5929df943729f00b2034e284df3ee077014120cb68674b00639c44d0117d76b30130330abc138dff99e45a03286e75631a285a8a28102c7f8d3805f1772a8a531a5295bb3562724f4e65faea46d3682dd4bdce7890de55fd3346c10442fcd5f9cfb8319ef1015d0b29b7d7323cbf302cd1758a6390e7d646b8b2349d84ced51ee206b646a2b156a9df1fc0488f6635ee2dabdd8d4206244f9767f3f66792b7b49f2689adfd57def5601a6abb14529a364ebf3d6156bc4ab294dd9eb83c02900cf877dee33f1b745aff811d3580154e24f2205e0d63ddead0f5a6d2a476475c8bbf71d9ed5ce818af3695bca9ebc49b3b0b155a68b76eb58cf03dc28e727d20c43476519bc906dcaa9150a3244b2400c55ba80c01dd98fe23d79409a87e8db598bf9b91b5491f97f8e717265726f8481872a3aee77e62e77d2ff1ecff73748e3c686c258ff84c5dea6955a05de54d80c6d207ef4267117c7da5342e45e0bc6b3399079b468582b16441530f6f7e11533bc0a696db4189b80df349bc605537d39cbba0a014a498b226e86c6579bfe8854726d32cb4abfce5e1d841ec4e88523c33853a7a","isRememberEnabled":true,"rememberDurationInDays":30,"staticryptSaltUniqueVariableName":"af1032884565d31a36d5d11145b49d69"};
+                staticryptConfig = {"staticryptEncryptedMsgUniqueVariableName":"dd7790f144b05bd216f45df14fa28d1b6f010204205755699f03034d110997f9627a937c0c6de8fba2b36847976a63607146ea0c79f270faafe9ff0c60b473e147c19102b4de933f2f5f7e8e08c5195e6689a1fae48af011df5d88a31e3bf173e892fffa496bd9a81b7efc2eacdbb76a1276797969a7dcc00aed1ec281f0d6b3648e67264ec61372700609db026df88abb35079caf61e0c08f1c39fde43908580c86b6fb61a92082a639521f053bfe17d2d831bd24857218f67f0250d01519ba21c439a109a7fa50f0a64a55c97e9470e37c3d211d873016759f1d130d26cbba4ed72c6a96cf8d8219610e6a7aba5b68a10dcfeee54a18695818a120bda12dd33a22cc2023c5e679eeccccb754224089e3287328c65b0a76ea9f2dddaa41bf8aba292d9bee8d22707170e9125855d743f53dfeb99aca45cee0c80c1a2dcd3c301c7521c1920bea8b9409304c2087db093d65c3d27ce5a337fa5b554ea8eac03c7a224d9ecac188d8045f50a3bd94ad089151849fda679cfcd4a4f1d0ea63a6530da7c058dd5cb15aab9f113db0fcf0ccff6135fe3f495eab3ac5079514c2041bff4016bf0307d58865c564267deeb6385199125d2d40804fb139978cc5a4c1fb70c8267d8ec281d2ef3cfd2ee3ae3b1ac07f543ea66bb067771b63fdf171162d58ae3f38d194a61c0cfc9047cdf38e96f07aae89510f3c66d5ada43386b91a5e5b7f2de15808d8405acdf57efc256efc965dc682dda63875c514593e9815ffc264d2b7741690c64266316c3d5c46bc956a54eb527d0488d0d3cbf1764cc69dee3f6a928f0d0c5b001b34ecc51aa37191c1c35bfc7a83d0173447f07950dd97c83e7a7bda8c0e28005f1a52819f483236113d3506fcfa34b1ab6fd90854cf1ef9ef599bc3ecffd1dd7d539a2cd626a2bd686a80d45ca6b696de72798a9f4b87d04f379ab6f2543b52ceb246b7e0a1ecadc249296381bc82120760cd2d0a3d11fffb9daa5f2e252834d134543e3547fef8bf1812a630ec6ad382e7b5202a477e988519100a571a0c02dc3532b9ffdb24ef75bdc58eab62f7b88f9a1f8e014b0a2df2529f8251c59ed5205c9b296a0e6b192fd0935bbd7cfff876993cbfbc100bb693a62dd2572928f0ad62ba3097acd58c69753bb69c71aa15282e50ba12aaea5dbc36eeadddc5bb5d7460a06b8fb122de3e3e4d6d742c50cb74de56cfe1baa3b1","isRememberEnabled":true,"rememberDurationInDays":30,"staticryptSaltUniqueVariableName":"af1032884565d31a36d5d11145b49d69"};
 
             // you can edit these values to customize some of the behavior of StatiCrypt
             const templateConfig = {
