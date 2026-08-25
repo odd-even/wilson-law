@@ -2074,16 +2074,23 @@ body.lightbox-open {
 
 .report-footer {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1.75rem;
   padding: clamp(2.75rem, 6vw, 4.25rem) var(--oe-pad);
   background:
     radial-gradient(ellipse 50% 80% at 0% 50%, rgba(84, 171, 229, 0.12), transparent 55%),
     var(--oe-black);
   color: var(--oe-white);
   border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.report-footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
 }
 
 .report-footer-brand {
@@ -2109,6 +2116,18 @@ body.lightbox-open {
 
 .report-footer a:hover {
   color: var(--oe-mint);
+}
+
+.report-footer-disclaimer {
+  margin: 0;
+  max-width: 52rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.72rem;
+  font-weight: 300;
+  line-height: 1.55;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.42);
 }
 
 /* ---------- Print ---------- */
@@ -2391,10 +2410,18 @@ body.lightbox-open {
   }
 
   .report-footer {
+    gap: 1.35rem;
+    padding-bottom: calc(2rem + env(safe-area-inset-bottom, 0px));
+  }
+
+  .report-footer-top {
     flex-direction: column;
     align-items: flex-start;
     gap: 1.25rem;
-    padding-bottom: calc(2rem + env(safe-area-inset-bottom, 0px));
+  }
+
+  .report-footer-disclaimer {
+    font-size: 0.68rem;
   }
 }
 
