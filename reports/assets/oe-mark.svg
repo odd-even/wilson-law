@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 40" fill="none" aria-hidden="true">
+  <!-- Designed for light backgrounds; invert on .slide--dark -->
+  <circle cx="20" cy="20" r="18" fill="#000"/>
+  <path d="M20 11.5v17M11.5 20h17" stroke="#fff" stroke-width="3.5" stroke-linecap="square"/>
+  <rect x="48" y="2" width="36" height="36" fill="#000"/>
+</svg>
