@@ -8,3 +8,6 @@ node_modules/
 __pycache__/
 *.pyc
 .cursor/
+reports/encrypted/
+# Editable plaintext — never publish; re-encrypt into reports/*.html for Pages
+reports/src/
