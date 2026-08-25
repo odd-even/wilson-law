@@ -2117,16 +2117,25 @@ body.lightbox-open {
   color: var(--oe-mint);
 }
 
+.report-footer-disclaimer-wrap {
+  width: 100%;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
 .report-footer-disclaimer {
   margin: 0;
-  max-width: 52rem;
-  padding-top: 1.25rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 0.72rem;
   font-weight: 300;
   line-height: 1.55;
   letter-spacing: 0.01em;
   color: rgba(255, 255, 255, 0.42);
+}
+
+.report-footer-disclaimer-label {
+  color: #fff;
+  font-weight: 500;
+  margin-right: 0.35em;
 }
 
 /* ---------- Print ---------- */
