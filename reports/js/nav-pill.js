@@ -1,9 +1,10 @@
 /**
- * Sliding nav pill + scroll progress bar under the sticky nav.
+ * Sliding nav pill + scroll progress + light/dark surface sync.
  */
 (function () {
   "use strict";
 
+  var nav = document.querySelector(".report-nav");
   var linksRoot = document.getElementById("report-nav-links");
   var pill = document.getElementById("report-nav-pill");
   var progressBar = document.getElementById("report-nav-progress");
@@ -21,6 +22,7 @@
   var current = null;
   var moving = false;
   var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var surface = "dark";
 
   function movePill(link, animate) {
     if (!link) return;
@@ -45,19 +47,40 @@
     }
   }
 
-  function setActive(nav) {
-    if (!nav || !linkByNav[nav] || nav === current) return;
-    current = nav;
+  function setActive(navKey) {
+    if (!navKey || !linkByNav[navKey] || navKey === current) return;
+    current = navKey;
     links.forEach(function (a) {
-      a.classList.toggle("is-active", a.getAttribute("data-nav") === nav);
+      a.classList.toggle("is-active", a.getAttribute("data-nav") === navKey);
     });
-    movePill(linkByNav[nav], true);
+    movePill(linkByNav[navKey], true);
 
-    var active = linkByNav[nav];
+    var active = linkByNav[navKey];
     if (active && linksRoot.scrollWidth > linksRoot.clientWidth) {
       var left = active.offsetLeft - 24;
       linksRoot.scrollTo({ left: Math.max(0, left), behavior: "smooth" });
     }
+  }
+
+  function isDarkSurface(el) {
+    if (!el || !el.closest) return true;
+    return !!el.closest(".hero, .band, .report-section--dark, .report-footer");
+  }
+
+  function syncNavSurface() {
+    if (!nav) return;
+    var box = nav.getBoundingClientRect();
+    var x = Math.min(window.innerWidth - 2, Math.max(2, window.innerWidth * 0.5));
+    var y = Math.min(window.innerHeight - 2, box.bottom + 4);
+
+    nav.style.pointerEvents = "none";
+    var el = document.elementFromPoint(x, y);
+    nav.style.pointerEvents = "";
+
+    var next = isDarkSurface(el) ? "dark" : "light";
+    if (next === surface) return;
+    surface = next;
+    nav.classList.toggle("report-nav--light", surface === "light");
   }
 
   function syncFromScroll() {
@@ -97,18 +120,20 @@
     requestAnimationFrame(function () {
       ticking = false;
       syncFromScroll();
+      syncNavSurface();
       updateProgress();
     });
   }
 
   links.forEach(function (a) {
     a.addEventListener("click", function () {
-      var nav = a.getAttribute("data-nav");
+      var navKey = a.getAttribute("data-nav");
       moving = true;
-      setActive(nav);
+      setActive(navKey);
       window.setTimeout(function () {
         moving = false;
         syncFromScroll();
+        syncNavSurface();
         updateProgress();
       }, 700);
     });
@@ -117,6 +142,7 @@
   window.addEventListener("scroll", onScroll, { passive: true });
   window.addEventListener("resize", function () {
     if (current && linkByNav[current]) movePill(linkByNav[current], false);
+    syncNavSurface();
     updateProgress();
   });
 
@@ -129,4 +155,5 @@
   setActive(links[0].getAttribute("data-nav"));
   movePill(links[0], false);
   syncFromScroll();
+  syncNavSurface();
 })();
