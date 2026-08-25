@@ -167,6 +167,7 @@
                 font-size: 0.9rem;
             }
 
+            /* Match .hero-title__bubble exactly (span avoids p color/size overrides) */
             .gate-bubble {
                 display: inline-flex;
                 align-items: center;
@@ -188,6 +189,13 @@
                   rgba(255, 255, 255, 0.06);
                 backdrop-filter: blur(12px) saturate(1.6);
                 -webkit-backdrop-filter: blur(12px) saturate(1.6);
+            }
+
+            @media (max-width: 720px) {
+                .gate-bubble {
+                    padding: 0.7em 1.35em;
+                    font-size: 0.68rem;
+                }
             }
 
             .staticrypt-title {
@@ -260,7 +268,7 @@
             <div class="staticrypt-page">
                 <div class="staticrypt-form">
                     <div class="staticrypt-instructions">
-                        <p class="gate-bubble">August Report</p>
+                        <span class="gate-bubble">August Report</span>
                         <p class="staticrypt-title">/*[|template_title|]*/0</p>
                         <p>/*[|template_instructions|]*/0</p>
                     </div>
