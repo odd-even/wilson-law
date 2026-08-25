@@ -397,18 +397,60 @@ a:hover {
   color: var(--oe-white);
   overflow: hidden;
   text-align: center;
+  --glow-x: 0px;
+  --glow-y: 0px;
+  --glow-x2: 0px;
+  --glow-y2: 0px;
 }
 
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: -1;
+  z-index: 0;
   background:
-    radial-gradient(ellipse 55% 70% at 85% 20%, rgba(84, 171, 229, 0.28), transparent 60%),
-    radial-gradient(ellipse 45% 55% at 10% 85%, rgba(105, 214, 173, 0.16), transparent 55%),
     radial-gradient(ellipse 30% 40% at 50% 50%, rgba(255, 255, 255, 0.04), transparent 70%),
     linear-gradient(165deg, #000 0%, #0a0a0a 55%, #000 100%);
+  pointer-events: none;
+}
+
+.hero-glows {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.hero-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(64px);
+  will-change: transform;
+  opacity: 1;
+}
+
+.hero-glow--blue {
+  width: min(62vw, 34rem);
+  height: min(70vw, 38rem);
+  right: -12%;
+  top: -18%;
+  background: rgba(84, 171, 229, 0.42);
+  transform: translate3d(var(--glow-x), var(--glow-y), 0);
+}
+
+.hero-glow--mint {
+  width: min(52vw, 28rem);
+  height: min(58vw, 30rem);
+  left: -14%;
+  bottom: -16%;
+  background: rgba(105, 214, 173, 0.28);
+  transform: translate3d(var(--glow-x2), var(--glow-y2), 0);
+}
+
+.hero > *:not(.hero-glows) {
+  position: relative;
+  z-index: 1;
 }
 
 .hero::after {
@@ -417,6 +459,7 @@ a:hover {
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 2;
   height: 1px;
   background: linear-gradient(90deg, var(--oe-blue), var(--oe-mint) 55%, transparent);
   transform: scaleX(0);
@@ -482,8 +525,16 @@ a:hover {
   border-radius: 999px;
   border: 0.5px solid rgba(255, 255, 255, 0.28);
   background:
-    radial-gradient(ellipse 70% 90% at 100% 0%, rgba(84, 171, 229, 0.28), transparent 55%),
-    radial-gradient(ellipse 70% 90% at 0% 100%, rgba(105, 214, 173, 0.24), transparent 55%),
+    radial-gradient(
+      ellipse 70% 90% at calc(100% + var(--glow-x)) calc(0% + var(--glow-y)),
+      rgba(84, 171, 229, 0.34),
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse 70% 90% at calc(0% + var(--glow-x2)) calc(100% + var(--glow-y2)),
+      rgba(105, 214, 173, 0.3),
+      transparent 55%
+    ),
     rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(12px) saturate(1.6);
   -webkit-backdrop-filter: blur(12px) saturate(1.6);
