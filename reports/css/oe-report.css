@@ -635,7 +635,6 @@ a:hover {
   width: min(104px, 28vw);
   height: auto;
   display: block;
-  filter: drop-shadow(0 8px 24px rgba(84, 171, 229, 0.25));
 }
 
 .hero-meta {
