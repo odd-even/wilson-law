@@ -48,6 +48,22 @@
                 color: #fff;
             }
 
+            .staticrypt-password-container {
+                position: relative;
+                outline: 0;
+                width: 100%;
+                margin: 0 0 15px;
+                box-sizing: border-box;
+                border-radius: 999px;
+                border: 0.5px solid rgba(255, 255, 255, 0.28);
+                background:
+                  radial-gradient(ellipse 70% 90% at 100% 0%, rgba(84, 171, 229, 0.28), transparent 55%),
+                  radial-gradient(ellipse 70% 90% at 0% 100%, rgba(105, 214, 173, 0.24), transparent 55%),
+                  rgba(255, 255, 255, 0.06);
+                backdrop-filter: blur(12px) saturate(1.6);
+                -webkit-backdrop-filter: blur(12px) saturate(1.6);
+            }
+
             .staticrypt-form input[type="password"],
             input[type="text"] {
                 background: transparent;
@@ -55,25 +71,19 @@
                 box-sizing: border-box;
                 font-size: 15px;
                 font-family: "Poppins", system-ui, sans-serif;
-                color: #fff;
+                font-weight: 500;
+                letter-spacing: 0.04em;
+                color: rgba(255, 255, 255, 0.92);
                 outline: 0;
-                padding: 15px 40px 15px 15px;
+                padding: 0.95em 2.75em 0.95em 1.35em;
                 width: 100%;
             }
 
             .staticrypt-form input::placeholder {
-                color: rgba(255, 255, 255, 0.35);
-            }
-
-            .staticrypt-password-container {
-                position: relative;
-                outline: 0;
-                background: rgba(255, 255, 255, 0.08);
-                width: 100%;
-                border: 0.5px solid rgba(255, 255, 255, 0.18);
-                border-radius: 999px;
-                margin: 0 0 15px;
-                box-sizing: border-box;
+                color: rgba(255, 255, 255, 0.4);
+                font-weight: 500;
+                letter-spacing: 0.06em;
+                text-transform: uppercase;
             }
 
             .staticrypt-toggle-password-visibility {
@@ -860,7 +870,7 @@ exports.init = init;
                 templateToggleAltShow = "Show password",
                 templateToggleAltHide = "Hide password",
                 isRememberEnabled = true,
-                staticryptConfig = {"staticryptEncryptedMsgUniqueVariableName":"d4e8c206a68ace3cc306a237dd0837205bbd56dc10229dddbc2c7febb5005359ba76877a8756855881b06c3311d3ffc26f6730475a0345d8bbe7d04b427798fc9ea718af87b43d3816f56f88741e973b80465383da3108d103dbdb0d411e8314f78041aca61a71dfd8c88c6177008c5b7fef0ed198764f679d45a5e9329734a6fa3395ccb2504a7fb568957db357970291f56bd6742b2483b16a91a18fc4c0a77b02bb85a3a43462da8ea0a8893dd25390ae1504ea3fe177091d9a1dcf5ba3cf57bcdbe55d7d25cf14dcc2a7326dabf266c22e4dce99766dacc71665cca398f6c3c599d48bffa872975e36f1906458b8aaa74e7417b4eee0cbe8c1eb4a746dc8e8550fbcf629d51f17bbdf060210b7e80f45ccb75f3bc69920fcf0af6366140110f881844126f3f734061ce97708babe1b241383cafaec06139774ab1e10cc2db5e72811c11c306cc831de10019195335d6a450128bac7fbed4b8bc4c9fa16762934d098e7ac1263bd491209512ef3d8e70988422350822f2c6f685284efa30544321d43640321523971927885ac8b2259627a90cba72d7891b046d34a2861a6127644418528ec4ba3ad189014e41e3cfc54d4107ec118a4ee9dafa1683eb3598f91cc050465aff63352b01adc120914b058254d9d6cd31e0c17e62cd706bae7493767bf716a1c51faaf16d0987c2b2ae30411bdf1d511e2e0cb19b3b7c323a6efdf9ce92714d61987144c3dc46150644b4a1eb7a85bc1e78ee6ca9ae6c1503671bfe8ab3b619eb9f2b1d87685978b65e41666d4e77444fac80b538ae2a093b8aee0b22bea573998c3d3bde295ed788fc6d9c2617e7d6a9865a569675a1003ea773f5d1d56e0ec6d57847be3a500971c0290adc6e33863b803bfce1fa4e9530eef4ef7e8a0765c1c3a6b21f2568b20fd561cbde6cd23ccf200be90002b0ea3995bebab1d695af4115a6baccbbb32291db30b288f6ffd2027610f1db2f2330a4e8dda6dc4e516ef21f6a1cc40b8124691b82ad6928a769f889efb177d6ff2b62b404e289d92edab94ac344b897755449272a9917585ba95751d8d31d8f12f1dcb92de1e26dfe49bb1d7ad74c44443112abd66ebb3ab1ee1bd39ce6b0a3e201a20f89e4b7ccc35a28c30aa909368db5bd735ca0178cc2e8fd4881940f19cae3cb2898b9a657a91f156e1a1cdc7948f175ae77fb2cbd819123ce4067be35f5cc1f2","isRememberEnabled":true,"rememberDurationInDays":30,"staticryptSaltUniqueVariableName":"af1032884565d31a36d5d11145b49d69"};
+                staticryptConfig = {"staticryptEncryptedMsgUniqueVariableName":"0d15f69700112c3116efc73cba0c33f55076a5ce64c2f76ff13317be1166f259d6e45c57d49f5b7b9fae6e568f80402d2c6a126de859c1d525d1356857d01b88b220c46b21d00dc22e09593d2a251ca6f63d1ce740814ae86eb5d623aeb3f52f824603687cb70c6e2d2cdbfd146516015e92501465010a65c70709195f4af4272ca3a70c6b565e57d21c609d79c85d0763aeb2ee172f939b3bbb8365c4d78f5f16e832895d48a096af1ed89e61cec405ad5bf1c5e71a3880a351584b4429a0aee3ed89e95d62ccafcd4865e6cdea264daea9a3a9dad1d25fdb62cce4b456aef3b0927002bfeef7681c9d20044aba8aa8cbbc2842939390e94cfae55aac51971275bd2ec7f384461beb0637d96b26fbd2bdf0c53bcce9572bc6876728aa3ee5293256db686fa2e01ba6c33ff2119c787f16ae1e582ad39abcbc9cc2c1f6c43b51794d8360b7ca854a527d5a53e99e6675a18126e90643d61864160fe6b9856a204d6c19cdcde948dfc4f66692961e8d03cd16f50854b3a22d16d65703456576d4b5f1f27c96eb64a79eb108d17dde6e2fd2f9cb3c427e19b5b7c013b58daf2f8601ec0e178d697c793a82e518ca3a35b1848aca16ca1d05ef37b28fbfe5980186e998dbc2d69c50bd006da4d60800a0eb52d80ce77a25311f178cbb07f30eff5cc4ddc9ecedd8fe7ea0b995bf533b05c8dcaaba19b8f305f672c9450aa339d7da1cc0a30f6f7aaa3c6450e629169ebf2f4eee5d043b7fbfab0534dd042c76137fd83cb8ceb90e908341c8abc0ffe0860019bb92b2495aa92b138b242edcac6e78c165abd4ec6c8c4c6e9e6c4bbdbb70a0343babe9d77bdbadd4e171bc6033366f1bfe0ba89d481a8f60daf154148f8c75659fe830a22e0fd7f188ceb424987743b357802fbc404c0fc066b1c145ccc8472a03ef04077f45135d12e1773f474089d0949184b3e881415a4842961c4a9aae9b2ea6de1a779ffb78b6a86874143e02197c8bb4deaedb101ab928bbba479c704604dae4dbf558112bf4c4a74aee4fd168488bc7087cbf237f94e4032af258aac131e7803611f2f3af2a4bee9681464b6f38dc208ca979ad7e515798a25f9daa9656e6f292144a6667f95805ba93323df47b8c441c9710092de1d182317157920d84e0b42e05584cb8d04ba97ece779485d1dff4e93c9298e2c64067febc9e56dd7605ad0e33fcf2f2bae93f12f4d698","isRememberEnabled":true,"rememberDurationInDays":30,"staticryptSaltUniqueVariableName":"af1032884565d31a36d5d11145b49d69"};
 
             // you can edit these values to customize some of the behavior of StatiCrypt
             const templateConfig = {
