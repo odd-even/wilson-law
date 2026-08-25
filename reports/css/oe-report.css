@@ -292,8 +292,7 @@ a:hover {
   bottom: 0;
   height: 2px;
   pointer-events: none;
-  background: rgba(255, 255, 255, 0.06);
-  transition: background 0.35s ease;
+  background: transparent;
 }
 
 .report-nav-progress__bar {
