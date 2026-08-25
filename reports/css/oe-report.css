@@ -2130,6 +2130,7 @@ body.lightbox-open {
   line-height: 1.55;
   letter-spacing: 0.01em;
   color: rgba(255, 255, 255, 0.42);
+  text-wrap: balance;
 }
 
 .report-footer-disclaimer-label {
