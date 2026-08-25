@@ -2118,9 +2118,12 @@ body.lightbox-open {
 }
 
 .report-footer-disclaimer-wrap {
-  width: 100%;
-  padding-top: 1.25rem;
+  width: auto;
+  margin-left: calc(-1 * var(--oe-pad));
+  margin-right: calc(-1 * var(--oe-pad));
+  padding: 1.25rem var(--oe-pad) 0;
   border-top: 1px solid rgba(255, 255, 255, 0.18);
+  box-sizing: border-box;
 }
 
 .report-footer-disclaimer {
@@ -2426,11 +2429,34 @@ body.lightbox-open {
   .report-footer-top {
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.25rem;
+    gap: 1rem;
+  }
+
+  .report-footer-brand {
+    gap: 0.85rem;
+  }
+
+  .report-footer-brand .mark--lg {
+    width: 72px;
+  }
+
+  .report-footer-brand p {
+    font-size: 1rem;
+  }
+
+  .report-footer-disclaimer-wrap {
+    padding-top: 1.1rem;
   }
 
   .report-footer-disclaimer {
-    font-size: 0.68rem;
+    font-size: 0.75rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .report-footer-disclaimer-label {
+    color: #fff;
+    font-weight: 600;
   }
 }
 
