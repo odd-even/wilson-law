@@ -768,6 +768,15 @@ h3 {
   -webkit-box-decoration-break: clone;
 }
 
+a.kw {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(84, 171, 229, 0.35);
+}
+
+a.kw:hover {
+  border-bottom-color: var(--oe-blue);
+}
+
 .report-section--dark .kw,
 .accent-mint {
   color: var(--oe-mint);
