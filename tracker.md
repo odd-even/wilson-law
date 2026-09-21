@@ -14,7 +14,7 @@
 | August report | Live | Hub + gated HTML |
 | September report | Live | MoM HTML + WebP evidence |
 | Hub | Live | Aug + Sept · password `Wilson2026` |
-| Contact disclaimer live | Todo | Approved — update Squarespace Contact |
+| Contact disclaimer live | Done | Live on /contact |
 | llms.txt | Done | Published |
 | Vendor inventory | Open | Still waiting on list |
 
@@ -26,6 +26,5 @@
 
 ## October — need next
 
-1. Live Contact disclaimer paste
-2. October screenshot pack (same Squarespace + GBP views)
-3. Optional: vendors / review ownership / GA4 access confirm
+1. October screenshot pack (same Squarespace + GBP views)
+2. Optional: vendors / review ownership / GA4 access confirm
