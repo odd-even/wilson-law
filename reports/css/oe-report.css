@@ -3071,3 +3071,39 @@ body.lightbox-open {
     margin-top: 0.25rem;
   }
 }
+
+/* ---------- Compact decision recap ---------- */
+
+.decision-recap {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem 1.5rem;
+  padding: 1.15rem 0 0.25rem;
+}
+
+.decision-recap__item {
+  min-width: 0;
+}
+
+.decision-recap__label {
+  margin: 0 0 0.4rem;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--oe-gray-2);
+}
+
+.decision-recap__text {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: var(--oe-black);
+}
+
+@media screen and (max-width: 720px) {
+  .decision-recap {
+    grid-template-columns: 1fr;
+    gap: 1.15rem;
+  }
+}
