@@ -34,6 +34,8 @@ npx --yes staticrypt \
 cp reports/encrypted/2026-08-digital-presence.html reports/2026-08-digital-presence.html
 cp reports/encrypted/2026-09-digital-presence.html reports/2026-09-digital-presence.html
 cp reports/encrypted/dashboard.html reports/dashboard.html
-cp reports/encrypted/index.html index.html
+cp reports/encrypted/index.html reports/index.html
+# Site root entry → reports hub (hub lives next to monthly reports)
+cp index.redirect.html index.html
 
-echo "Encrypted pages written to reports/ and index.html"
+echo "Encrypted pages written to reports/ (hub: reports/index.html; root redirects there)"
