@@ -157,15 +157,3 @@
   syncFromScroll();
   syncNavSurface();
 })();
-
-/* Close month switcher when clicking outside */
-(function () {
-  "use strict";
-  document.addEventListener("click", function (e) {
-    var open = document.querySelectorAll(".report-switcher[open]");
-    if (!open.length) return;
-    for (var i = 0; i < open.length; i++) {
-      if (!open[i].contains(e.target)) open[i].removeAttribute("open");
-    }
-  });
-})();
