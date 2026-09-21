@@ -7,8 +7,8 @@
 
 ## Contact page disclaimer
 
-**Status:** Approved  
-**Action:** Update Contact page to proposed copy (remove “not secure” claim). Site is HTTPS.
+**Status:** Done — live on Contact  
+**Action:** Completed. “Not secure” claim removed; HTTPS-safe copy published.
 
 **Approved copy** (from August report “Proposed copy”):
 
