@@ -13,3 +13,6 @@ reports/encrypted/
 reports/src/
 reports/preview.html
 reports/preview-mobile.html
+
+drop/processed-*/
+drop/Screenshot*

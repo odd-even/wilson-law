@@ -30,8 +30,8 @@ Chat compresses images. Files dropped in this folder stay full resolution.
 
 ## Tips
 
+- Prefer **quality WebP** when filing into `_assets/` (convert from Desktop PNG with `cwebp -q 90` or similar).
 - Keep the original filename if you want — I’ll rename.
-- PNG or JPEG is fine; prefer the largest export you have.
 - Several files at once is fine.
 - Optional: prefix with a hint, e.g. `gbp-hours.png` or `gsc-sitemaps.png`, to speed filing.
 

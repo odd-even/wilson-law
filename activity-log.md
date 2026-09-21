@@ -6,6 +6,17 @@ Format: `YYYY-MM-DD` · short title · what happened · artifacts / next
 
 ---
 
+## 2026-09-21
+
+- **September kickoff** — Tracker + `monthly-reports/2026-09.md` skeleton (no filler metrics).
+- **Wilson reply filed** — `inputs/wilson-priorities-2026-09.md`: Contact disclaimer **approved**; priority geos **24018** (main) + South Roanoke **24014**; Real Estate (largest) + Estate Planning (highest profit).
+- **Drop processed** — 15 Desktop PNGs → quality WebP in `_assets/gbp/`, `_assets/squarespace/`, `_assets/ga4/`; originals archived in `drop/processed-2026-09-21/`.
+- **September report shipped** — `reports/2026-09-digital-presence.html` MoM vs August; hub lists Aug + Sept; password **`Wilson2026`**.
+- **Highlights** — Visits 460 (−23%); forms 11 · CVR 15.7%; AI **6/10** (was 3/10); SEO **89%**; **llms.txt** live.
+- **Next** — Live Contact disclaimer update; October MoM; optional GBP exterior tag.
+
+---
+
 ## 2026-08-25
 
 - **Engagement kickoff** — Digital Presence + SEO Review scoped (vendors, site SEO, GBP, reviews, ongoing support).

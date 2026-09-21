@@ -14,6 +14,7 @@ mkdir -p reports/src reports/encrypted
 # Keep editable plaintext in reports/src/ — encrypt from there.
 npx --yes staticrypt \
   reports/src/2026-08-digital-presence.html \
+  reports/src/2026-09-digital-presence.html \
   reports/src/dashboard.html \
   reports/src/index.html \
   -p "$STATICRYPT_PASSWORD" \
@@ -31,6 +32,7 @@ npx --yes staticrypt \
   --template-color-secondary "#000000"
 
 cp reports/encrypted/2026-08-digital-presence.html reports/2026-08-digital-presence.html
+cp reports/encrypted/2026-09-digital-presence.html reports/2026-09-digital-presence.html
 cp reports/encrypted/dashboard.html reports/dashboard.html
 cp reports/encrypted/index.html index.html
 
